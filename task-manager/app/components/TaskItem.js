@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import styles from '../styles/styles.module.css'
-
+import React, { useState } from 'react';
+import styles from '../../styles/styles.module.css';
 
 const TaskItem = ({ task}) => {
     const [completed, setCompleted] = useState(false);
