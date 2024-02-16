@@ -1,11 +1,3 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    margin: auto;
-    padding: 0;
-    
-}
-
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -41,5 +33,5 @@ body {
 
 .toggleButton:hover {
     background-color: #45a049;
-    
+
 }
