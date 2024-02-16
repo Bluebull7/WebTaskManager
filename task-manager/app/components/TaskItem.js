@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from '../styles/styles.module.css'
 
 
 const TaskItem = ({ task}) => {
@@ -9,11 +10,13 @@ const TaskItem = ({ task}) => {
     };
 
     return (
-        <li>
-          <span style={{ textDecoration: completed ? 'line-through' : 'none'}}>
-                {task.title}
+        <li className={styles.TaskItem}>
+          <span style={{ textDecoration: completed ? 'line-through' : 'none'}}
+          className={styles.taskTitle}>
+            {task.title}
           </span>
-          <button onClick={handleToggleComplete}>
+          <button onClick={handleToggleComplete}
+          className={styles.toggleButton}>
             {completed ? 'Undo' : 'Complete'}
           </button>
         </li>
