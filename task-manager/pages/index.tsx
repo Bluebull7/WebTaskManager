@@ -1,15 +1,12 @@
 import React from "react";
-import styles from '../styles/styles.module.css'
+import { useEffect, useState } from 'react';
 
 const HomePage: React.FC = () => {
-    return (
+  const [tasks, setTasks] = useState([])'
 
-        <div className={styles.container}>
-          <h1 className={styles.heading}>
-            Welcome to Web Task Manager
-          </h1>
-        </div>
-
+  useEffect(() => {
+  // Fetch tasks from backend
+  
      
     
     )
